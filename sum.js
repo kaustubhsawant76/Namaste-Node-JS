@@ -1,8 +1,19 @@
-function calculateSum (a,b){
+ //export
+  var x="kaustubh sawant";
+//export
+ function calculateSum (a,b){
     const sum = a + b;
     console.log(sum);
     
 
 }
 
-module.exports = calculateSum;
+// module.exports = calculateSum;//single export
+module.exports = { x: x, //x
+    calculateSum : calculateSum,  //calculateSum
+   
+};//multiple export wrapped in a object
+
+
+//module protect their variables and function var x created in one module is different than other module until there is no export import included 
+//due to this every model has its private place
