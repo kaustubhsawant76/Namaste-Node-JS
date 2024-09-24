@@ -10,7 +10,11 @@ var b = 20986;
 crypto.pbkdf2Sync("password","salt",5000000,50,"sha512");
 console.log("First key is generated");
 
-
+//this callback will be only pushed to call stack in v8 once the call stack is empty
+setTimeout(()=>{
+    console.log("execute immediately");
+    
+},0);
 //pbkdf2=Passwaord Base Key Derivation function 2
 //ASYNC Function
 crypto.pbkdf2("password","salt",5000000,50,"sha512",(err,key)=>{
