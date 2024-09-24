@@ -7,6 +7,12 @@ console.log("Hello World");
 var a = 1078698;
 var b = 20986;
 
+
+//Synchronous function   Should never be used in real life as it blocks main thread
+fs.readFileSync("./file.txt","utf8");
+console.log("This will execute only after file read");
+
+
 https.get("https://dummyjson.com/products/1" , (res) => {
     console.log("Fetched Data Succesfully");
     
@@ -17,6 +23,9 @@ setTimeout(()=>{
     
 },5000);
 
+
+
+//ASYNC function
 fs.readFile("./file.txt", "utf8", (err,data) =>{
 console.log("File Data :",data);
 
