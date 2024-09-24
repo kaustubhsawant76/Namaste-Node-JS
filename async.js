@@ -36,5 +36,5 @@ console.log("Multiplication result is :" ,c);
 
 //1st hello world and synchronous operations will be printed
 //then async operations will be printed
-//in async operations 1st file read write then second timeout will happen after 5 seconds and then api data is fetched at last
+//in async operations 1st file read write then second api data is fetched and at last timeout will happen after 5 seconds 
 
