@@ -18,9 +18,7 @@ setTimeout(()=>{
 //pbkdf2=Passwaord Base Key Derivation function 2
 //ASYNC Function
 crypto.pbkdf2("password","salt",5000000,50,"sha512",(err,key)=>{
-    console.log("Second Key is Generated");
-    
-});
+    console.log("Second Key is Generated");});
 
 function multiplyFn(a,b){
     const result =a + b;
